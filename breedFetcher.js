@@ -1,8 +1,5 @@
 const request = require('request');
 
-// const breedName = `${process.argv[2]}`;
-
-
 const fetchBreedDescription = function(breedName, breedDescription) {
   
   request('https://api.thecatapi.com/v1/breeds/', (err, _response, body) => {
